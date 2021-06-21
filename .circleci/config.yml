@@ -6,12 +6,11 @@ workflows:
   test-env-value:
     # Run the welcome/run job in its own container
     jobs:
-      - mybuild
+      - build
 jobs:
-  mybuild:
+  build:
     docker:
-      - image: 
-        cimg/base:2020.01
+      - image: cimg/base:2020.01
     steps:
       - checkout
       - run:
