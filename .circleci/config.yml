@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
         name: "echo env var value"
-        command: | 
+        command: |
           echo $CIRCLE_BUILD_URL
 
 
