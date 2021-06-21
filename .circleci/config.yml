@@ -16,6 +16,6 @@ jobs:
       - run:
           name: "echo env var value"
           command: |
-            echo $CIRCLE_BUILD_URL
+            echo $MY_ENV_VARIABLE1
 
 
