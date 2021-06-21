@@ -3,19 +3,19 @@ version: 2.1
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "test-env-value"
-  test-env-value:
+  test-env-val:
     # Run the welcome/run job in its own container
     jobs:
-      - build
+      - mybuild
 jobs:
-  build:
+  mybuild:
     docker:
       - image: cimg/base:2020.01
     steps:
       - checkout
       - run:
-        name: "echo env var value"
-        command: |
-          echo $CIRCLE_BUILD_URL
+          name: "echo env var value"
+          command: |
+            echo $CIRCLE_BUILD_URL
 
 
