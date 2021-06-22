@@ -8,7 +8,7 @@ jobs:
       - run: return 1
       - run:
           name: on error
-          command: echo "Hello Error!"
+          command: echo "Hello Error! this working"
           when: on_fail
 
 workflows:
